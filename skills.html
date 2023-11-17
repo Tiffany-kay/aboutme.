@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Tiff_Skills</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+nav {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.skills {
+    padding: 20px;
+}
+
+.skills h1 {
+    color: orangered;
+}
+
+.skills p {
+    line-height: 1.5;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    margin-bottom: 10px;
+}
+.skills ul li {
+            opacity: 10;
+            transition: opacity 10s ease-in-out;
+        }
+    </style>
+</head>
+<script type="text/javascript">  
+    function matchpass()
+    {  
+    var firstpassword=document.WAINAINA.password.value;  
+    var secondpassword=document.WAINAINA.password2.value;  
+      
+    if(firstpassword==secondpassword)
+    {  
+    return true;  
+    }  
+    else
+    {  
+    alert("password must be same!");  
+    return false;  
+    }  
+    }  
+    </script>  
+<body>
+
+    <section class="skills">
+        <h1><Marquee behavior="alternate"> check out my skills😎 </Marquee></h1>
+            <HR color = "magenta" size = "5">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="childhood.html">Childhood</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="future.html">Future</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            <p>I am an enthusiastic learner, ready to take up skills and enhance myself everyday</p>
+            <p>I am conversant with C, C++, Java and SQL languages. What about you?
+                <p><input type="checkbox" name="lang" value="C++">C++
+                <p><input type="checkbox" name="lang" value="Java">Java
+                <p><input type="checkbox" name="lang" value="Javascript">Javascript	
+                <p><input type="checkbox" name="lang" value="PHP">PHP
+                <p><input type="checkbox" name="lang" value="Python">Python
+        <Table align="center" Border = 4 Width ="75%" cellSpacing = 2 ceellpadding =4 Bgcolor="grey" bordercolor ="orangered">
+
+            <A  align="center" Name="Skills"><p><B><H2>Skills</H2></B></A>
+            
+            <TR><TD>Web Development (HTML, CSS, JavaScript)</TD><td rowspan="5" style="writing-mode:vertical-lr;text-orientation: upright">THERE'S MORE😎<li><a href="education.html">click here</a></li></td></TR>
+            <TR><TD>Front-end developing (React)</TD></TR>            
+            <TR><TD>Back-end developing (Firebase)</TD></TR>
+            <TR><TD>Public Speaking</TD></TR>
+            <TR><TD>Coding with C and C++</TD></TR>
+            
+            </Table>
+            </section>
+            <script>
+                window.onload = function() {
+                
+                    var skillsListItems = document.querySelectorAll('.skills ul li');
+        
+                    for (var i = 0; i < skillsListItems.length; i++) {
+                        (function(i) {
+                            setTimeout(function() {
+                                skillsListItems[i].style.opacity = 1;
+                            }, 500 * i);
+                        })(i);
+                    }
+                };
+            </script>
+            <p align="center"><a href ="childhood.html" target ="zetech">Visit childhood page</a>
+                <p align="center"><a href ="home.html" target ="zetech">Visit home page</a>
+                <p align="center"><a href ="future.html" target ="zetech">Visit future page</a>
+                <p align="center"><a href ="contact.html" target ="zetech">Visit contact page</a>
+                    <form align="center" name="WAINAINA" onsubmit="return matchpass()">  
+                    Share a secret skills with me:<input type="password" name="password" /><br/></br>  
+                    Wanna share another one😉:<input type="password" name="password2"/><br/>  
+                        <input type="submit">  
+                        </form>  	
+</body>
+</html>

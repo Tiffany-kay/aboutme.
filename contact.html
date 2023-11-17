@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Contact</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+nav {
+    background-color: wheat;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact h1 {
+    color: orangered;
+}
+
+.contact p {
+    line-height: 1.5;
+}
+
+.contact a {
+    color: orangered;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+    </style>
+    <script>  
+        function validateemail()  
+        {  
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@"); 
+        var dotposition=x.lastIndexOf("."); 
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+        {  
+          alert("Please enter a valid e-mail address");  
+          return false;  
+          }  
+        }  
+        </script>  
+</head>
+<body>
+    <section class="contact" align="center">
+        <h1><Marquee behavior="alternate"> Contact Me 📱📞 </Marquee></h1>
+            <HR color = "magenta" size = "5">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="childhood.html">Childhood</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>You can reach and interact with me through the following ways</p>
+        <p>Email: <a href="mailto:your.gathonitiffany16@gmail.com">gathonitiffany16@gmail.com</a></p>
+
+        <ul>
+            <li><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></li>
+            <li><a href="https://twitter.com/tifkayq" target="_blank">Twitter</a></li>
+            
+        </ul>
+
+        
+    </section>
+    <p align="center">Let's validate your Email</p>
+        <form  align="center" name="myform"  method="post" action="#" onsubmit="return validateemail();">  
+            Email: <input type="text" name="email"><br/>  
+              
+            <input type="submit" value="register">  
+            </form>  
+    <p align="center"><a href ="childhood.html" target ="zetech">Visit childhood page</a>
+        <p align="center"><a href ="skills.html" target ="zetech">Visit skills page</a>
+        <p align="center"><a href ="future.html" target ="zetech">Visit future page</a>
+        <p align="center"><a href ="home.html" target ="zetech">Visit home page</a>	
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Education</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+nav {
+    background-color: orangered;
+    color: white !important;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.education {
+    padding: 20px;
+}
+
+.education h1 {
+    color: orangered;
+}
+.education div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education div div{
+    display: inline;
+}
+.education p {
+    line-height: 1.5;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education ul li {
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+
+   
+    <section class="education">
+        <h1><Marquee behavior="alternate"> Academic Achievement 👩🏽‍🎓 </Marquee></h1>
+            <HR color = "magenta" size = "5">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="childhood.html">Childhood</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="future.html">Future</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="edu">
+                    <div class="p">
+                        <p>
+                            My academic journey began in high school, where I discovered my passion for technology and problem-solving. 
+                            While navigating the challenges of adolescence, I eagerly engaged in various academic pursuits that laid the
+                             groundwork for my current pursuit of a degree in Information Technology. My enthusiasm for learning and the 
+                             transformative power of technology has been a driving force in shaping my academic path.</p>
+                            
+                            <p>High School Achievements:
+                            During my high school years, I actively sought opportunities to excel academically and 
+                            immerse myself in the world of technology. I was honored with the Outstanding Student in Computer Science award
+                            , recognizing my achievements in advanced programming courses. Additionally, I led a team in developing a mobile app
+                             for a local community project, showcasing my ability to apply theoretical knowledge to practical solutions.
+                              These experiences ignited my interest in IT and laid the foundation for my decision to embark on a degree in 
+                              the field.</p>
+                            
+                            <p>Pursuing a Degree in IT:
+                            Now, as I pursue a degree in Information Technology, my academic journey has evolved
+                             into a deeper exploration of the intricacies of the field. Notable achievements include
+                              successfully completing challenging coursework in database management and cybersecurity,
+                               where I earned accolades for innovative project solutions. Engaging in an internship at a 
+                               tech startup further enriched my practical skills and provided real-world insights. Looking ahead, 
+                               I am excited to leverage my academic achievements to contribute meaningfully to the dynamic landscape
+                                of information technology
+                            , aiming for a future where my passion aligns seamlessly with professional success.
+                                    </p>
+                    </div>
+                    <img src="graduation.jpeg" alt="image"/> 
+                </div>
+              
+    </section>
+    
+
+    
+    <script>
+        const skillsItems = document.querySelectorAll('.skills-item');
+
+skillsItems.forEach((item, index) => {
+    setTimeout(() => {
+        item.classList.add('highlight');
+    }, index * 1000);
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const skillsItems = document.querySelectorAll('.skills-item');
+
+    skillsItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add('highlight');
+        }, index * 1000);
+    });
+});
+    </script>
+    <p align="center"><a href ="childhood.html" target ="zetech">Visit childhood page</a>
+        <p align="center"><a href ="skills.html" target ="zetech">Visit skills page</a>
+        <p align="center"><a href ="future.html" target ="zetech">Visit future page</a>
+        <p align="center"><a href ="contact.html" target ="zetech">Visit contact page</a>	
+</body>
+</html>
